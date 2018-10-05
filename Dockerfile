@@ -14,6 +14,7 @@ WORKDIR /home/node
 # Install app dependencies
 COPY ./app .
 RUN yarn install
+RUN yarn global add pm2
 
 EXPOSE 3000
 CMD [ "yarn", "start" ]
