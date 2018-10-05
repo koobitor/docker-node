@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "scripts": {
+    "dev": "nodemon -w server.js server.js",
+    "start": "NODE_ENV=production pm2-runtime server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
